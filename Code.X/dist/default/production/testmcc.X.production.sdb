@@ -1,0 +1,443 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"10 E:\UTEX\Apps\MPLABX\Installation\XC8\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 E:\UTEX\Apps\MPLABX\Installation\XC8\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 E:\UTEX\Apps\MPLABX\Installation\XC8\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"70 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _MotorRight_set_direction MotorRight_set_direction `(v  1 e 1 0 ]
+"84
+[v _MotorLeft_set_direction MotorLeft_set_direction `(v  1 e 1 0 ]
+"98
+[v _Servo_Motion_CW Servo_Motion_CW `(v  1 e 1 0 ]
+"106
+[v _Servo_Motion_CCW Servo_Motion_CCW `(v  1 e 1 0 ]
+"114
+[v _Dilui Dilui `(v  1 e 1 0 ]
+"120
+[v _Retrai Retrai `(v  1 e 1 0 ]
+"126
+[v _Rephai Rephai `(v  1 e 1 0 ]
+"132
+[v _Dithang Dithang `(v  1 e 1 0 ]
+"144
+[v _Dunglai Dunglai `(v  1 e 1 0 ]
+"150
+[v _Bluetooth Bluetooth `(v  1 e 1 0 ]
+"183
+[v _Doline_Cong Doline_Cong `(v  1 e 1 0 ]
+"209
+[v _Kep Kep `(v  1 e 1 0 ]
+"251
+[v _main main `(v  1 e 1 0 ]
+"66 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"99
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"144
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"64 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+"62 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+[s S457 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"447 E:/UTEX/Apps/MPLABX/Installation/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1827.h
+[u S466 . 1 `S457 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES466  1 e 1 @12 ]
+[s S478 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"509
+[u S487 . 1 `S478 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES487  1 e 1 @13 ]
+[s S177 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"571
+[u S186 . 1 `S177 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES186  1 e 1 @17 ]
+"942
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"962
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"982
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+[s S199 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+"1003
+[s S207 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S211 . 1 `S199 1 . 1 0 `S207 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES211  1 e 1 @28 ]
+"1153
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1215
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+[s S131 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1479
+[s S140 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S145 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES145  1 e 1 @149 ]
+"1590
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1649
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1707
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2040
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S426 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2057
+[u S435 . 1 `S426 1 . 1 0 ]
+[v _LATAbits LATAbits `VES435  1 e 1 @268 ]
+"2097
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S405 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2114
+[u S414 . 1 `S405 1 . 1 0 ]
+[v _LATBbits LATBbits `VES414  1 e 1 @269 ]
+"2431
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2780
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2842
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2862
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2914
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3173
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3193
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3229
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3279
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3312
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S332 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3329
+[u S341 . 1 `S332 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES341  1 e 1 @413 ]
+"3374
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S311 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3391
+[u S320 . 1 `S311 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES320  1 e 1 @414 ]
+"3436
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3488
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3517
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+[s S60 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+"5506
+[s S69 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+[u S74 . 1 `S60 1 . 1 0 `S69 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES74  1 e 1 @670 ]
+"5578
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5598
+[v _CCPR3H CCPR3H `VEuc  1 e 1 @786 ]
+"5618
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5689
+[v _CCPR4L CCPR4L `VEuc  1 e 1 @792 ]
+"5709
+[v _CCPR4H CCPR4H `VEuc  1 e 1 @793 ]
+"5729
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"64 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _CMD CMD `[10]uc  1 e 10 0 ]
+"66
+[v _speed speed `ui  1 e 2 0 ]
+"68
+[v _dem dem `ui  1 e 2 0 ]
+[s S253 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+[u S258 . 1 `S253 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES258  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"251 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"269
+} 0
+"50 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"62 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"64 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"55 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"62 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"66 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"163
+} 0
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"159
+} 0
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"167
+} 0
+"209 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _Kep Kep `(v  1 e 1 0 ]
+{
+"213
+} 0
+"98
+[v _Servo_Motion_CW Servo_Motion_CW `(v  1 e 1 0 ]
+{
+"99
+[v Servo_Motion_CW@i i `i  1 a 2 1 ]
+"105
+} 0
+"183
+[v _Doline_Cong Doline_Cong `(v  1 e 1 0 ]
+{
+"208
+} 0
+"150
+[v _Bluetooth Bluetooth `(v  1 e 1 0 ]
+{
+"182
+} 0
+"106
+[v _Servo_Motion_CCW Servo_Motion_CCW `(v  1 e 1 0 ]
+{
+"107
+[v Servo_Motion_CCW@i i `i  1 a 2 1 ]
+"113
+} 0
+"120
+[v _Retrai Retrai `(v  1 e 1 0 ]
+{
+"125
+} 0
+"126
+[v _Rephai Rephai `(v  1 e 1 0 ]
+{
+"131
+} 0
+"99 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+{
+"102
+} 0
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"130
+} 0
+"144 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _Dunglai Dunglai `(v  1 e 1 0 ]
+{
+"149
+} 0
+"132
+[v _Dithang Dithang `(v  1 e 1 0 ]
+{
+"137
+} 0
+"114
+[v _Dilui Dilui `(v  1 e 1 0 ]
+{
+"119
+} 0
+"82 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+[v _PWM4_LoadDutyValue PWM4_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM4_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"89
+} 0
+"82 E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"89
+} 0
+"70 E:\UTEX\testmcc.X\testmcc.X\main.c
+[v _MotorRight_set_direction MotorRight_set_direction `(v  1 e 1 0 ]
+{
+[v MotorRight_set_direction@dir dir `uc  1 a 1 wreg ]
+[v MotorRight_set_direction@dir dir `uc  1 a 1 wreg ]
+[v MotorRight_set_direction@dir dir `uc  1 a 1 0 ]
+"83
+} 0
+"84
+[v _MotorLeft_set_direction MotorLeft_set_direction `(v  1 e 1 0 ]
+{
+[v MotorLeft_set_direction@dir dir `uc  1 a 1 wreg ]
+[v MotorLeft_set_direction@dir dir `uc  1 a 1 wreg ]
+[v MotorLeft_set_direction@dir dir `uc  1 a 1 0 ]
+"97
+} 0

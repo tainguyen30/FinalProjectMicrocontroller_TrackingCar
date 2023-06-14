@@ -1,0 +1,827 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+idloc IDLOC 5 8000 8000 4 2 1
+reset_vec CODE 0 0 0 2 2 1
+end_init CODE 0 2 2 2 2 1
+config CONFIG 4 8007 8007 2 2 1
+$dist/default/production\testmcc.X.production.o
+cinit CODE 0 7ED 7ED 13 2 1
+idloc IDLOC 5 8000 8000 4 2 1
+text1 CODE 0 56B 56B 16 2 1
+text2 CODE 0 4B7 4B7 4 2 1
+text3 CODE 0 4DF 4DF 8 2 1
+text4 CODE 0 4F0 4F0 9 2 1
+text5 CODE 0 4E7 4E7 9 2 1
+text6 CODE 0 52A 52A 15 2 1
+text7 CODE 0 4D8 4D8 7 2 1
+text8 CODE 0 617 617 21 2 1
+text9 CODE 0 4CC 4CC 6 2 1
+text10 CODE 0 4C6 4C6 6 2 1
+text11 CODE 0 4C0 4C0 6 2 1
+text12 CODE 0 4F9 4F9 D 2 1
+text13 CODE 0 65B 65B 26 2 1
+text14 CODE 0 6BF 6BF 76 2 1
+text15 CODE 0 735 735 B8 2 1
+text16 CODE 0 638 638 23 2 1
+text17 CODE 0 555 555 16 2 1
+text18 CODE 0 53F 53F 16 2 1
+text19 CODE 0 4BB 4BB 5 2 1
+text20 CODE 0 506 506 F 2 1
+text21 CODE 0 515 515 15 2 1
+text22 CODE 0 5C6 5C6 17 2 1
+text23 CODE 0 5AF 5AF 17 2 1
+text24 CODE 0 598 598 17 2 1
+text25 CODE 0 581 581 17 2 1
+text26 CODE 0 5FA 5FA 1D 2 1
+text27 CODE 0 5DD 5DD 1D 2 1
+nvBANK0 BANK0 1 34 34 6 1 1
+maintext CODE 0 681 681 3E 2 1
+cstackCOMMON COMMON 1 78 78 6 1 1
+bssBANK0 BANK0 1 20 20 14 1 1
+clrtext CODE 0 4D2 4D2 6 2 1
+bssCOMMON COMMON 1 70 70 8 1 1
+config CONFIG 4 8007 8007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3A-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-24F 1
+BANK0 3A-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-24F 1
+CONST 4-4B6 2
+CONST 800-FFF 2
+ENTRY 4-4B6 2
+ENTRY 800-FFF 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+CODE 4-4B6 2
+CODE 800-FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-2EF 1
+SFR6 300-36F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-216F 1
+EEDATA F000-F0FF 2
+STRCODE 4-4B6 2
+STRCODE 800-FFF 2
+STRING 4-4B6 2
+STRING 800-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\testmcc.X.production.o
+7ED cinit CODE >2806:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7ED cinit CODE >2809:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7ED cinit CODE >2854:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7EE cinit CODE >2855:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7EF cinit CODE >2856:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F0 cinit CODE >2857:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F1 cinit CODE >2858:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F2 cinit CODE >2859:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F5 cinit CODE >2863:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F6 cinit CODE >2864:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F7 cinit CODE >2865:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F8 cinit CODE >2866:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7F9 cinit CODE >2867:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7FA cinit CODE >2868:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7FD cinit CODE >2874:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7FD cinit CODE >2876:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+7FE cinit CODE >2877:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+5DD text27 CODE >84:E:\UTEX\testmcc.X\testmcc.X\main.c
+5DE text27 CODE >85:E:\UTEX\testmcc.X\testmcc.X\main.c
+5E3 text27 CODE >86:E:\UTEX\testmcc.X\testmcc.X\main.c
+5E5 text27 CODE >87:E:\UTEX\testmcc.X\testmcc.X\main.c
+5E6 text27 CODE >88:E:\UTEX\testmcc.X\testmcc.X\main.c
+5E7 text27 CODE >89:E:\UTEX\testmcc.X\testmcc.X\main.c
+5EC text27 CODE >90:E:\UTEX\testmcc.X\testmcc.X\main.c
+5EE text27 CODE >91:E:\UTEX\testmcc.X\testmcc.X\main.c
+5EF text27 CODE >92:E:\UTEX\testmcc.X\testmcc.X\main.c
+5F0 text27 CODE >93:E:\UTEX\testmcc.X\testmcc.X\main.c
+5F6 text27 CODE >94:E:\UTEX\testmcc.X\testmcc.X\main.c
+5F8 text27 CODE >95:E:\UTEX\testmcc.X\testmcc.X\main.c
+5F9 text27 CODE >97:E:\UTEX\testmcc.X\testmcc.X\main.c
+5FA text26 CODE >70:E:\UTEX\testmcc.X\testmcc.X\main.c
+5FB text26 CODE >71:E:\UTEX\testmcc.X\testmcc.X\main.c
+600 text26 CODE >72:E:\UTEX\testmcc.X\testmcc.X\main.c
+602 text26 CODE >73:E:\UTEX\testmcc.X\testmcc.X\main.c
+603 text26 CODE >74:E:\UTEX\testmcc.X\testmcc.X\main.c
+604 text26 CODE >75:E:\UTEX\testmcc.X\testmcc.X\main.c
+609 text26 CODE >76:E:\UTEX\testmcc.X\testmcc.X\main.c
+60B text26 CODE >77:E:\UTEX\testmcc.X\testmcc.X\main.c
+60C text26 CODE >78:E:\UTEX\testmcc.X\testmcc.X\main.c
+60D text26 CODE >79:E:\UTEX\testmcc.X\testmcc.X\main.c
+613 text26 CODE >80:E:\UTEX\testmcc.X\testmcc.X\main.c
+615 text26 CODE >81:E:\UTEX\testmcc.X\testmcc.X\main.c
+616 text26 CODE >83:E:\UTEX\testmcc.X\testmcc.X\main.c
+581 text25 CODE >82:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+581 text25 CODE >85:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+58C text25 CODE >88:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+597 text25 CODE >89:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+598 text24 CODE >82:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+598 text24 CODE >85:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+5A3 text24 CODE >88:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+5AE text24 CODE >89:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+5AF text23 CODE >114:E:\UTEX\testmcc.X\testmcc.X\main.c
+5AF text23 CODE >115:E:\UTEX\testmcc.X\testmcc.X\main.c
+5B3 text23 CODE >116:E:\UTEX\testmcc.X\testmcc.X\main.c
+5B7 text23 CODE >117:E:\UTEX\testmcc.X\testmcc.X\main.c
+5BE text23 CODE >118:E:\UTEX\testmcc.X\testmcc.X\main.c
+5C5 text23 CODE >119:E:\UTEX\testmcc.X\testmcc.X\main.c
+5C6 text22 CODE >132:E:\UTEX\testmcc.X\testmcc.X\main.c
+5C6 text22 CODE >133:E:\UTEX\testmcc.X\testmcc.X\main.c
+5CA text22 CODE >134:E:\UTEX\testmcc.X\testmcc.X\main.c
+5CE text22 CODE >135:E:\UTEX\testmcc.X\testmcc.X\main.c
+5D5 text22 CODE >136:E:\UTEX\testmcc.X\testmcc.X\main.c
+5DC text22 CODE >137:E:\UTEX\testmcc.X\testmcc.X\main.c
+515 text21 CODE >144:E:\UTEX\testmcc.X\testmcc.X\main.c
+515 text21 CODE >145:E:\UTEX\testmcc.X\testmcc.X\main.c
+519 text21 CODE >146:E:\UTEX\testmcc.X\testmcc.X\main.c
+51D text21 CODE >147:E:\UTEX\testmcc.X\testmcc.X\main.c
+523 text21 CODE >148:E:\UTEX\testmcc.X\testmcc.X\main.c
+529 text21 CODE >149:E:\UTEX\testmcc.X\testmcc.X\main.c
+506 text20 CODE >113:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+506 text20 CODE >115:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+506 text20 CODE >117:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+50B text20 CODE >119:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+50C text20 CODE >121:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+511 text20 CODE >125:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+512 text20 CODE >126:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+513 text20 CODE >129:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+514 text20 CODE >130:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4BB text19 CODE >99:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4BB text19 CODE >101:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4BF text19 CODE >102:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+53F text18 CODE >126:E:\UTEX\testmcc.X\testmcc.X\main.c
+53F text18 CODE >127:E:\UTEX\testmcc.X\testmcc.X\main.c
+543 text18 CODE >128:E:\UTEX\testmcc.X\testmcc.X\main.c
+547 text18 CODE >129:E:\UTEX\testmcc.X\testmcc.X\main.c
+54D text18 CODE >130:E:\UTEX\testmcc.X\testmcc.X\main.c
+554 text18 CODE >131:E:\UTEX\testmcc.X\testmcc.X\main.c
+555 text17 CODE >120:E:\UTEX\testmcc.X\testmcc.X\main.c
+555 text17 CODE >121:E:\UTEX\testmcc.X\testmcc.X\main.c
+559 text17 CODE >122:E:\UTEX\testmcc.X\testmcc.X\main.c
+55D text17 CODE >123:E:\UTEX\testmcc.X\testmcc.X\main.c
+564 text17 CODE >124:E:\UTEX\testmcc.X\testmcc.X\main.c
+56A text17 CODE >125:E:\UTEX\testmcc.X\testmcc.X\main.c
+638 text16 CODE >106:E:\UTEX\testmcc.X\testmcc.X\main.c
+638 text16 CODE >107:E:\UTEX\testmcc.X\testmcc.X\main.c
+63A text16 CODE >108:E:\UTEX\testmcc.X\testmcc.X\main.c
+63C text16 CODE >109:E:\UTEX\testmcc.X\testmcc.X\main.c
+640 text16 CODE >110:E:\UTEX\testmcc.X\testmcc.X\main.c
+642 text16 CODE >111:E:\UTEX\testmcc.X\testmcc.X\main.c
+649 text16 CODE >112:E:\UTEX\testmcc.X\testmcc.X\main.c
+652 text16 CODE >112:E:\UTEX\testmcc.X\testmcc.X\main.c
+656 text16 CODE >112:E:\UTEX\testmcc.X\testmcc.X\main.c
+65A text16 CODE >113:E:\UTEX\testmcc.X\testmcc.X\main.c
+735 text15 CODE >150:E:\UTEX\testmcc.X\testmcc.X\main.c
+735 text15 CODE >151:E:\UTEX\testmcc.X\testmcc.X\main.c
+736 text15 CODE >152:E:\UTEX\testmcc.X\testmcc.X\main.c
+73D text15 CODE >153:E:\UTEX\testmcc.X\testmcc.X\main.c
+748 text15 CODE >154:E:\UTEX\testmcc.X\testmcc.X\main.c
+753 text15 CODE >155:E:\UTEX\testmcc.X\testmcc.X\main.c
+75E text15 CODE >156:E:\UTEX\testmcc.X\testmcc.X\main.c
+769 text15 CODE >157:E:\UTEX\testmcc.X\testmcc.X\main.c
+774 text15 CODE >158:E:\UTEX\testmcc.X\testmcc.X\main.c
+77F text15 CODE >159:E:\UTEX\testmcc.X\testmcc.X\main.c
+78A text15 CODE >160:E:\UTEX\testmcc.X\testmcc.X\main.c
+795 text15 CODE >161:E:\UTEX\testmcc.X\testmcc.X\main.c
+7A0 text15 CODE >162:E:\UTEX\testmcc.X\testmcc.X\main.c
+7A7 text15 CODE >163:E:\UTEX\testmcc.X\testmcc.X\main.c
+7AD text15 CODE >164:E:\UTEX\testmcc.X\testmcc.X\main.c
+7B0 text15 CODE >165:E:\UTEX\testmcc.X\testmcc.X\main.c
+7B1 text15 CODE >166:E:\UTEX\testmcc.X\testmcc.X\main.c
+7B7 text15 CODE >167:E:\UTEX\testmcc.X\testmcc.X\main.c
+7BA text15 CODE >168:E:\UTEX\testmcc.X\testmcc.X\main.c
+7BB text15 CODE >169:E:\UTEX\testmcc.X\testmcc.X\main.c
+7C1 text15 CODE >170:E:\UTEX\testmcc.X\testmcc.X\main.c
+7C4 text15 CODE >171:E:\UTEX\testmcc.X\testmcc.X\main.c
+7C5 text15 CODE >172:E:\UTEX\testmcc.X\testmcc.X\main.c
+7CB text15 CODE >173:E:\UTEX\testmcc.X\testmcc.X\main.c
+7CE text15 CODE >174:E:\UTEX\testmcc.X\testmcc.X\main.c
+7CF text15 CODE >175:E:\UTEX\testmcc.X\testmcc.X\main.c
+7D5 text15 CODE >176:E:\UTEX\testmcc.X\testmcc.X\main.c
+7D8 text15 CODE >177:E:\UTEX\testmcc.X\testmcc.X\main.c
+7D9 text15 CODE >178:E:\UTEX\testmcc.X\testmcc.X\main.c
+7DF text15 CODE >179:E:\UTEX\testmcc.X\testmcc.X\main.c
+7E3 text15 CODE >180:E:\UTEX\testmcc.X\testmcc.X\main.c
+7E4 text15 CODE >151:E:\UTEX\testmcc.X\testmcc.X\main.c
+7E4 text15 CODE >181:E:\UTEX\testmcc.X\testmcc.X\main.c
+7E8 text15 CODE >151:E:\UTEX\testmcc.X\testmcc.X\main.c
+7EC text15 CODE >182:E:\UTEX\testmcc.X\testmcc.X\main.c
+6BF text14 CODE >183:E:\UTEX\testmcc.X\testmcc.X\main.c
+6BF text14 CODE >184:E:\UTEX\testmcc.X\testmcc.X\main.c
+6CC text14 CODE >185:E:\UTEX\testmcc.X\testmcc.X\main.c
+6CF text14 CODE >186:E:\UTEX\testmcc.X\testmcc.X\main.c
+6D0 text14 CODE >187:E:\UTEX\testmcc.X\testmcc.X\main.c
+6DC text14 CODE >188:E:\UTEX\testmcc.X\testmcc.X\main.c
+6DF text14 CODE >189:E:\UTEX\testmcc.X\testmcc.X\main.c
+6E0 text14 CODE >190:E:\UTEX\testmcc.X\testmcc.X\main.c
+6EC text14 CODE >191:E:\UTEX\testmcc.X\testmcc.X\main.c
+6EF text14 CODE >192:E:\UTEX\testmcc.X\testmcc.X\main.c
+6F0 text14 CODE >193:E:\UTEX\testmcc.X\testmcc.X\main.c
+6FD text14 CODE >196:E:\UTEX\testmcc.X\testmcc.X\main.c
+70A text14 CODE >199:E:\UTEX\testmcc.X\testmcc.X\main.c
+717 text14 CODE >202:E:\UTEX\testmcc.X\testmcc.X\main.c
+723 text14 CODE >203:E:\UTEX\testmcc.X\testmcc.X\main.c
+726 text14 CODE >204:E:\UTEX\testmcc.X\testmcc.X\main.c
+727 text14 CODE >205:E:\UTEX\testmcc.X\testmcc.X\main.c
+734 text14 CODE >207:E:\UTEX\testmcc.X\testmcc.X\main.c
+734 text14 CODE >208:E:\UTEX\testmcc.X\testmcc.X\main.c
+65B text13 CODE >98:E:\UTEX\testmcc.X\testmcc.X\main.c
+65B text13 CODE >99:E:\UTEX\testmcc.X\testmcc.X\main.c
+65D text13 CODE >100:E:\UTEX\testmcc.X\testmcc.X\main.c
+65F text13 CODE >101:E:\UTEX\testmcc.X\testmcc.X\main.c
+665 text13 CODE >102:E:\UTEX\testmcc.X\testmcc.X\main.c
+667 text13 CODE >103:E:\UTEX\testmcc.X\testmcc.X\main.c
+66F text13 CODE >104:E:\UTEX\testmcc.X\testmcc.X\main.c
+678 text13 CODE >104:E:\UTEX\testmcc.X\testmcc.X\main.c
+67C text13 CODE >104:E:\UTEX\testmcc.X\testmcc.X\main.c
+680 text13 CODE >105:E:\UTEX\testmcc.X\testmcc.X\main.c
+4F9 text12 CODE >209:E:\UTEX\testmcc.X\testmcc.X\main.c
+4F9 text12 CODE >210:E:\UTEX\testmcc.X\testmcc.X\main.c
+4FC text12 CODE >211:E:\UTEX\testmcc.X\testmcc.X\main.c
+4FF text12 CODE >212:E:\UTEX\testmcc.X\testmcc.X\main.c
+505 text12 CODE >213:E:\UTEX\testmcc.X\testmcc.X\main.c
+4C0 text11 CODE >165:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4C0 text11 CODE >166:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4C5 text11 CODE >167:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4C6 text10 CODE >157:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4C6 text10 CODE >158:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4CB text10 CODE >159:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4CC text9 CODE >161:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4CC text9 CODE >162:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4D1 text9 CODE >163:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+617 text8 CODE >66:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+617 text8 CODE >71:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+61A text8 CODE >74:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+61C text8 CODE >77:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+61E text8 CODE >80:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+620 text8 CODE >83:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+621 text8 CODE >86:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+628 text8 CODE >87:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+62F text8 CODE >88:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+636 text8 CODE >90:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+637 text8 CODE >92:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/eusart.c
+4D8 text7 CODE >62:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4D8 text7 CODE >65:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4DB text7 CODE >67:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4DC text7 CODE >69:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4DE text7 CODE >70:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+52A text6 CODE >55:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+52A text6 CODE >60:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+52C text6 CODE >61:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+52D text6 CODE >66:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+530 text6 CODE >67:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+532 text6 CODE >72:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+534 text6 CODE >73:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+536 text6 CODE >78:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+538 text6 CODE >79:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+539 text6 CODE >80:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+53B text6 CODE >86:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+53D text6 CODE >87:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+53E text6 CODE >94:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pin_manager.c
+4E7 text5 CODE >64:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4E7 text5 CODE >69:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4EA text5 CODE >72:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4EB text5 CODE >75:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4EC text5 CODE >78:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4EF text5 CODE >80:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm3.c
+4F0 text4 CODE >64:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4F0 text4 CODE >69:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4F3 text4 CODE >72:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4F4 text4 CODE >75:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4F5 text4 CODE >78:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4F8 text4 CODE >80:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/pwm4.c
+4DF text3 CODE >62:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4DF text3 CODE >67:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4E2 text3 CODE >70:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4E3 text3 CODE >73:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4E4 text3 CODE >76:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4E6 text3 CODE >77:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/tmr2.c
+4B7 text2 CODE >72:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4B7 text2 CODE >75:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+4BA text2 CODE >76:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+56B text1 CODE >50:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+56B text1 CODE >53:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+56E text1 CODE >54:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+571 text1 CODE >55:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+574 text1 CODE >56:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+577 text1 CODE >57:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+57A text1 CODE >58:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+57D text1 CODE >59:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+580 text1 CODE >60:E:\UTEX\testmcc.X\testmcc.X\mcc_generated_files/mcc.c
+681 maintext CODE >251:E:\UTEX\testmcc.X\testmcc.X\main.c
+681 maintext CODE >252:E:\UTEX\testmcc.X\testmcc.X\main.c
+685 maintext CODE >255:E:\UTEX\testmcc.X\testmcc.X\main.c
+688 maintext CODE >256:E:\UTEX\testmcc.X\testmcc.X\main.c
+68F maintext CODE >257:E:\UTEX\testmcc.X\testmcc.X\main.c
+695 maintext CODE >254:E:\UTEX\testmcc.X\testmcc.X\main.c
+69C maintext CODE >260:E:\UTEX\testmcc.X\testmcc.X\main.c
+69F maintext CODE >259:E:\UTEX\testmcc.X\testmcc.X\main.c
+6AA maintext CODE >262:E:\UTEX\testmcc.X\testmcc.X\main.c
+6AE maintext CODE >263:E:\UTEX\testmcc.X\testmcc.X\main.c
+6B2 maintext CODE >266:E:\UTEX\testmcc.X\testmcc.X\main.c
+6B5 maintext CODE >265:E:\UTEX\testmcc.X\testmcc.X\main.c
+4D2 clrtext CODE >2843:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D2 clrtext CODE >2844:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D3 clrtext CODE >2845:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D3 clrtext CODE >2846:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D4 clrtext CODE >2847:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D5 clrtext CODE >2848:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D6 clrtext CODE >2849:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+4D7 clrtext CODE >2850:C:\Users\nguye\AppData\Local\Temp\xcAs9oo.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_EUSART_Read A0C 0 CODE 0 text20 dist/default/production\testmcc.X.production.o
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_Servo_Motion_CW D02 0 CODE 0 text13 dist/default/production\testmcc.X.production.o
+__end_of_WDT_Initialize 976 0 CODE 0 text2 dist/default/production\testmcc.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+MotorRight_set_direction@dir 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+_LATA 10C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_LATB 10D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_TMR2 1A 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+_main D02 0 CODE 0 maintext dist/default/production\testmcc.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+start 4 0 CODE 0 init C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+__end_of_PWM3_LoadDutyValue B30 0 CODE 0 text25 dist/default/production\testmcc.X.production.o
+_MotorLeft_set_direction BBA 0 CODE 0 text27 dist/default/production\testmcc.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__end_of_MotorLeft_set_direction BF4 0 CODE 0 text27 dist/default/production\testmcc.X.production.o
+__end_of_EUSART_SetFramingErrorHandler 998 0 CODE 0 text10 dist/default/production\testmcc.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler 9A4 0 CODE 0 text9 dist/default/production\testmcc.X.production.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__end_of_EUSART_Initialize C70 0 CODE 0 text8 dist/default/production\testmcc.X.production.o
+__end_of_Rephai AAA 0 CODE 0 text18 dist/default/production\testmcc.X.production.o
+__end_of_Retrai AD6 0 CODE 0 text17 dist/default/production\testmcc.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_TMR2_Initialize 9BE 0 CODE 0 text3 dist/default/production\testmcc.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+PWM3_LoadDutyValue@dutyValue 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_PWM3_LoadDutyValue B02 0 CODE 0 text25 dist/default/production\testmcc.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__end_of_Doline_Cong E6A 0 CODE 0 text14 dist/default/production\testmcc.X.production.o
+_Servo_Motion_CW CB6 0 CODE 0 text13 dist/default/production\testmcc.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ANSELA 18C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_BORCON 116 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_CCPR3H 312 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_CCPR3L 311 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_CCPR4H 319 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_CCPR4L 318 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__end_of_EUSART_is_rx_ready 980 0 CODE 0 text19 dist/default/production\testmcc.X.production.o
+__end_of_Dithang BBA 0 CODE 0 text22 dist/default/production\testmcc.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___stackhi 0 0 ABS 0 - C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+___stacklo 0 0 ABS 0 - C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+_EUSART_Initialize C2E 0 CODE 0 text8 dist/default/production\testmcc.X.production.o
+_EUSART_is_rx_ready 976 0 CODE 0 text19 dist/default/production\testmcc.X.production.o
+_PIN_MANAGER_Initialize A54 0 CODE 0 text6 dist/default/production\testmcc.X.production.o
+start_initialization FDA 0 CODE 0 cinit dist/default/production\testmcc.X.production.o
+_EUSART_SetErrorHandler 980 0 CODE 0 text11 dist/default/production\testmcc.X.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production\testmcc.X.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+__end_of_Dunglai A54 0 CODE 0 text21 dist/default/production\testmcc.X.production.o
+__end_of_SYSTEM_Initialize B02 0 CODE 0 text1 dist/default/production\testmcc.X.production.o
+_Rephai A7E 0 CODE 0 text18 dist/default/production\testmcc.X.production.o
+_Retrai AAA 0 CODE 0 text17 dist/default/production\testmcc.X.production.o
+clear_ram0 9A4 0 CODE 0 clrtext dist/default/production\testmcc.X.production.o
+_SPBRGH 19C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_SPBRGL 19B 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production\testmcc.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+__end_of_EUSART_Read A2A 0 CODE 0 text20 dist/default/production\testmcc.X.production.o
+__end_of_PWM3_Initialize 9E0 0 CODE 0 text5 dist/default/production\testmcc.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 10008 0 IDLOC 5 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+_Servo_Motion_CCW C70 0 CODE 0 text16 dist/default/production\testmcc.X.production.o
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit FDA 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+EUSART_SetErrorHandler@interruptHandler 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_APFCON0 11D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_APFCON1 11E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+Servo_Motion_CW@i 79 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+_PORTAbits C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 34 0 BANK0 1 nvBANK0 dist/default/production\testmcc.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_CMD 2A 0 BANK0 1 bssBANK0 dist/default/production\testmcc.X.production.o
+_Kep 9F2 0 CODE 0 text12 dist/default/production\testmcc.X.production.o
+_PR2 1B 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_dem 72 0 COMMON 1 bssCOMMON dist/default/production\testmcc.X.production.o
+__end_of_Bluetooth FDA 0 CODE 0 text15 dist/default/production\testmcc.X.production.o
+_PWM3_Initialize 9CE 0 CODE 0 text5 dist/default/production\testmcc.X.production.o
+_SYSTEM_Initialize AD6 0 CODE 0 text1 dist/default/production\testmcc.X.production.o
+_MotorRight_set_direction BF4 0 CODE 0 text26 dist/default/production\testmcc.X.production.o
+__end_of_Kep A0C 0 CODE 0 text12 dist/default/production\testmcc.X.production.o
+_Bluetooth E6A 0 CODE 0 text15 dist/default/production\testmcc.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+_CCPTMRS0bits 29E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_Servo_Motion_CCW CB6 0 CODE 0 text16 dist/default/production\testmcc.X.production.o
+_Dithang B8C 0 CODE 0 text22 dist/default/production\testmcc.X.production.o
+__end_of_PWM4_Initialize 9F2 0 CODE 0 text4 dist/default/production\testmcc.X.production.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+EUSART_SetFramingErrorHandler@interruptHandler 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+__ptext10 98C 0 CODE 0 text10 dist/default/production\testmcc.X.production.o
+__ptext11 980 0 CODE 0 text11 dist/default/production\testmcc.X.production.o
+__ptext12 9F2 0 CODE 0 text12 dist/default/production\testmcc.X.production.o
+__ptext13 CB6 0 CODE 0 text13 dist/default/production\testmcc.X.production.o
+__ptext14 D7E 0 CODE 0 text14 dist/default/production\testmcc.X.production.o
+__ptext15 E6A 0 CODE 0 text15 dist/default/production\testmcc.X.production.o
+__ptext16 C70 0 CODE 0 text16 dist/default/production\testmcc.X.production.o
+__ptext17 AAA 0 CODE 0 text17 dist/default/production\testmcc.X.production.o
+__ptext18 A7E 0 CODE 0 text18 dist/default/production\testmcc.X.production.o
+__ptext19 976 0 CODE 0 text19 dist/default/production\testmcc.X.production.o
+__ptext20 A0C 0 CODE 0 text20 dist/default/production\testmcc.X.production.o
+__ptext21 A2A 0 CODE 0 text21 dist/default/production\testmcc.X.production.o
+__ptext22 B8C 0 CODE 0 text22 dist/default/production\testmcc.X.production.o
+__ptext23 B5E 0 CODE 0 text23 dist/default/production\testmcc.X.production.o
+__ptext24 B30 0 CODE 0 text24 dist/default/production\testmcc.X.production.o
+__ptext25 B02 0 CODE 0 text25 dist/default/production\testmcc.X.production.o
+__ptext26 BF4 0 CODE 0 text26 dist/default/production\testmcc.X.production.o
+__ptext27 BBA 0 CODE 0 text27 dist/default/production\testmcc.X.production.o
+__end_of_PIN_MANAGER_Initialize A7E 0 CODE 0 text6 dist/default/production\testmcc.X.production.o
+_BAUDCON 19F 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext D02 0 CODE 0 maintext dist/default/production\testmcc.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__end_of_EUSART_SetErrorHandler 98C 0 CODE 0 text11 dist/default/production\testmcc.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_LATAbits 10C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_LATBbits 10D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_EUSART_FramingErrorHandler 38 0 BANK0 1 nvBANK0 dist/default/production\testmcc.X.production.o
+_EUSART_OverrunErrorHandler 36 0 BANK0 1 nvBANK0 dist/default/production\testmcc.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_EUSART_ErrorHandler 34 0 BANK0 1 nvBANK0 dist/default/production\testmcc.X.production.o
+_Dunglai A2A 0 CODE 0 text21 dist/default/production\testmcc.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_PWM4_LoadDutyValue B5E 0 CODE 0 text24 dist/default/production\testmcc.X.production.o
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\testmcc.X.production.o
+_PWM4_Initialize 9E0 0 CODE 0 text4 dist/default/production\testmcc.X.production.o
+_PIR1bits 11 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_EUSART_SetFramingErrorHandler 98C 0 CODE 0 text10 dist/default/production\testmcc.X.production.o
+_EUSART_SetOverrunErrorHandler 998 0 CODE 0 text9 dist/default/production\testmcc.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\testmcc.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_Doline_Cong D7E 0 CODE 0 text14 dist/default/production\testmcc.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 AD6 0 CODE 0 text1 dist/default/production\testmcc.X.production.o
+__ptext2 96E 0 CODE 0 text2 dist/default/production\testmcc.X.production.o
+__ptext3 9BE 0 CODE 0 text3 dist/default/production\testmcc.X.production.o
+__ptext4 9E0 0 CODE 0 text4 dist/default/production\testmcc.X.production.o
+__ptext5 9CE 0 CODE 0 text5 dist/default/production\testmcc.X.production.o
+__ptext6 A54 0 CODE 0 text6 dist/default/production\testmcc.X.production.o
+__ptext7 9B0 0 CODE 0 text7 dist/default/production\testmcc.X.production.o
+__ptext8 C2E 0 CODE 0 text8 dist/default/production\testmcc.X.production.o
+__ptext9 998 0 CODE 0 text9 dist/default/production\testmcc.X.production.o
+_PWM4_LoadDutyValue B30 0 CODE 0 text24 dist/default/production\testmcc.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+PWM4_LoadDutyValue@dutyValue 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+___heap_lo 0 0 ABS 0 - C:\Users\nguye\AppData\Local\Temp\xcAs9oo.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\testmcc.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+MotorLeft_set_direction@dir 78 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+Servo_Motion_CCW@i 79 0 COMMON 1 cstackCOMMON dist/default/production\testmcc.X.production.o
+__end_of_main D7E 0 CODE 0 maintext dist/default/production\testmcc.X.production.o
+__end_of_Dilui B8C 0 CODE 0 text23 dist/default/production\testmcc.X.production.o
+_Dilui B5E 0 CODE 0 text23 dist/default/production\testmcc.X.production.o
+_RCREG 199 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_RCSTA 19D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_T2CON 1C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_TXREG 19A 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_TXSTA 19E 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_speed 74 0 COMMON 1 bssCOMMON dist/default/production\testmcc.X.production.o
+_eusartRxLastError 77 0 COMMON 1 bssCOMMON dist/default/production\testmcc.X.production.o
+_WDT_Initialize 96E 0 CODE 0 text2 dist/default/production\testmcc.X.production.o
+_CCP3CON 313 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_CCP4CON 31A 0 ABS 0 - dist/default/production\testmcc.X.production.o
+__end_of_OSCILLATOR_Initialize 9BE 0 CODE 0 text7 dist/default/production\testmcc.X.production.o
+__end_of_MotorRight_set_direction C2E 0 CODE 0 text26 dist/default/production\testmcc.X.production.o
+__initialization FDA 0 CODE 0 cinit dist/default/production\testmcc.X.production.o
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\testmcc.X.production.o
+_T2CONbits 1C 0 ABS 0 - dist/default/production\testmcc.X.production.o
+_OSCILLATOR_Initialize 9B0 0 CODE 0 text7 dist/default/production\testmcc.X.production.o
+__end_of_TMR2_Initialize 9CE 0 CODE 0 text3 dist/default/production\testmcc.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7ED FDA 13 2
+text1 0 56B AD6 16 2
+text2 0 4B7 96E 4 2
+text3 0 4DF 9BE 8 2
+text4 0 4F0 9E0 9 2
+text5 0 4E7 9CE 9 2
+text6 0 52A A54 15 2
+text7 0 4D8 9B0 7 2
+text8 0 617 C2E 21 2
+text9 0 4CC 998 6 2
+text10 0 4C6 98C 6 2
+text11 0 4C0 980 6 2
+text12 0 4F9 9F2 D 2
+text13 0 65B CB6 26 2
+text14 0 6BF D7E 76 2
+text15 0 735 E6A B8 2
+text16 0 638 C70 23 2
+text17 0 555 AAA 16 2
+text18 0 53F A7E 16 2
+text19 0 4BB 976 5 2
+text20 0 506 A0C F 2
+text21 0 515 A2A 15 2
+text22 0 5C6 B8C 17 2
+text23 0 5AF B5E 17 2
+text24 0 598 B30 17 2
+text25 0 581 B02 17 2
+text26 0 5FA BF4 1D 2
+text27 0 5DD BBA 1D 2
+maintext 0 681 D02 3E 2
+reset_vec 0 0 0 4 2
+bssBANK0 1 20 20 1A 1
+clrtext 0 4D2 9A4 6 2
+bssCOMMON 1 70 70 E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
